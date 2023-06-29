@@ -59,8 +59,6 @@ def update_discipline(id, name, teacher_id):
     )
 
 
-#
-#
 def remove_discipline(id):
     discipline = session.execute(
         select(Discipline).filter_by(id=id)
